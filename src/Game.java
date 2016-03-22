@@ -16,17 +16,12 @@ public class Game extends JFrame {
 
 	private void initUI(int mapWidth, int mapHeight, Map map) {
 
-		//JPanel panel = new JPanel();
-		//getContentPane().add(panel);
-		//panel.setLayout(null);
-		//panel.add(map);
-
 		setTitle("Nature Man");
-		setSize(mapWidth * 50, mapHeight * 50);
+		setSize(mapWidth * Map.BLOCK_SIZE, mapHeight * Map.BLOCK_SIZE);
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		getContentPane().setBackground(GRASS_COLOR);
-		//getContentPane().add(new Character(5,5));
+		
 	}
 
 	public static void main(String[] args) {

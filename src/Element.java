@@ -24,7 +24,7 @@ public abstract class Element extends JComponent {
 	
 	public void paint(Graphics g) {
 		 g.setColor(color);
-	    g.fillRect (position.getX()*50, position.getY()*50, 50, 50);  
+	    g.fillRect (position.getX()*Map.BLOCK_SIZE, position.getY()*Map.BLOCK_SIZE, Map.BLOCK_SIZE, Map.BLOCK_SIZE);  
 	 }
 
 }
